@@ -1,0 +1,116 @@
+// Global styles goes here
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+// helper class
+.fs-7 {
+    font-size: 0.8rem;
+}
+
+.fs-8 {
+    font-size: 0.7rem;
+}
+
+.fs-9 {
+    font-size: 0.7rem !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+
+#icon-eye {
+    right: 10px;
+    top: 25%;
+}
+
+.login-container {
+    width: 500px;
+}
+.text-color{
+    color:  #D1E4E8;
+}
+.bg-theme {
+    background-color: #D1E4E8;
+}
+
+.bg-main-color {
+    background-color: $bg-main-color;
+}
+
+.tick-color {
+    background-color: $tick-color;
+}
+.edit-message-bg-color{
+background-color: lighten($color:$success, $amount: 8);
+}
+textarea {
+    resize: none !important;
+}
+
+.icon {
+    color: $icon-color;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.icon-color{
+    color: $icon-color;
+}
+.overlay-container {
+    width: 800px;
+    padding: 30px 50px;
+}
+
+.cdk-overlay-container {
+    z-index: 1100;
+}
+
+.truncated-text {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+
+
+// Overlay backdrop styling
+.overlay-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+// Overlay panel styling
+.overlay-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.modal {
+    z-index: 5000;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(10px);
+}
