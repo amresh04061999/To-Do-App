@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit, input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })
-export class CardComponent {
+export class CardComponent implements OnInit{
+@Input() status:any
+constructor(){
 
+}
+  ngOnInit(): void {
+    console.log(this.status);
+    
+  }
 }
